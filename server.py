@@ -21,6 +21,20 @@ def root():
     
     return template('templates/index.tpl', res=data)
 
+@app.route('/add')
+def add_data():
+    return static_file('form.html', root='templates')
+
+@app.post('/add')
+def add_data():
+    img = request.forms.get('img')
+    name = request.forms.get('name')
+
+    cur = db.web_demo.insert({'img': img, 'name': name})
+
+    redirect('/')
+
+
 @app.route('/del/<oid_data>')
 def del_data(oid_data):
     cur = db.web_demo.remove({'_id': ObjectId(str(oid_data))})

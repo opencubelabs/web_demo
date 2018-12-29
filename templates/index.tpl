@@ -43,7 +43,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
       <div class="container">
-        <a class="navbar-brand" href="#" style="color: #2d2d2d;">
+        <a class="navbar-brand" href="/" style="color: #2d2d2d;">
           <img src="https://opencubelabs.com/img/ocl_logo.svg" style="height: 30px;">
           <!-- Logo Here -->
         </a>
@@ -53,10 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Tab 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tab 2</a>
+              <a class="nav-link" href="/add">Add Data</a>
             </li>
           </ul>
         </div>
@@ -67,7 +64,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>Heading</h1>
+            <h1>Image Data</h1>
           </div>
         </div>
       </div>
