@@ -41,6 +41,10 @@ def del_data(oid_data):
 
     return {'status': 'ok'}	
 
+@app.route('/manifest')
+def manifest():
+    return static_file('manifest.json', root='')
+
 # Static Routes
 @app.route('/<filename:re:.*\.html>')
 def javascripts(filename):

@@ -36,6 +36,8 @@
       }
     </script>
 
+    <link rel="manifest" href="/manifest">
+
   </head>
 
   <body>
