@@ -1,7 +1,7 @@
 {
-  "name": "Machura",
-  "short_name": "Machura",
-  "description": "Machura test application",
+  "name": "Opencube Labs",
+  "short_name": "OCL",
+  "description": "OCL application",
   "start_url": "/",
   "scope": ".",
   "background_color": "#eeeeee",
