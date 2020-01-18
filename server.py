@@ -10,12 +10,16 @@ import os
 
 app = Bottle(__name__)
 
-client = MongoClient('mongodb://heroku_j47rhw75:2ctpo13v9ptj497mqf7q1o1aps@ds151909.mlab.com:51909/heroku_j47rhw75')
-db = client.heroku_j47rhw75
+client = MongoClient('mongodb://heroku_9c33z3ck:tccb7509v178bthsrjdoj9pfu6@ds153705.mlab.com:53705/heroku_9c33z3ck?retryWrites=false')
+db = client.heroku_9c33z3ck
+
+# client = MongoClient()
+# db = client.test
 
 
 @app.route('/')
 def root():
+    # cur = db.web_demo.find({'user': 'surajjana'})
     cur = db.web_demo.find()
     data = json.loads(dumps(cur))
     
@@ -30,7 +34,7 @@ def add_data():
     img = request.forms.get('img')
     name = request.forms.get('name')
 
-    cur = db.web_demo.insert({'img': img, 'name': name})
+    cur = db.web_demo.insert({'img': img, 'name': name, 'user': 'surajjana'})
 
     redirect('/')
 
